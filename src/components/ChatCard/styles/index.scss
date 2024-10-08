@@ -1,0 +1,107 @@
+.chat-card {
+  width: 100%;
+  min-height: 90vh;
+  max-height: 90vh;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--Primary-Border, #d2caff);
+  background: var(--font-neutral-bg-white-text, #fff);
+  overflow: hidden;
+}
+
+.chat-card-left {
+  width: 286px;
+  max-width: 286px;
+  min-height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 14px 14px 14px 0px;
+  gap: 20px;
+}
+
+.chat-card-left-header {
+  width: 100%;
+  display: flex;
+  flex-grow: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.chat-card-left-body {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  gap: 8px;
+  overflow-y: scroll;
+}
+
+.chat-card-right {
+  flex: 1; /* Ensure it grows to fill available space */
+  min-height: 100%; /* Ensures it grows to at least 100% of its parent */
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(228, 223, 255, 0.5); /* E4DFFF with 50% opacity */
+  border-top-right-radius: 16px;
+}
+
+.chat-card-right-header {
+  display: flex;
+  flex-grow: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  gap: 8px;
+}
+
+.hat-card-right-header-title {
+  color: black;
+}
+
+.hat-card-right-header-right {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.chat-card-right-body {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  gap: 8px;
+  overflow-y: scroll;
+}
+
+.chat-card-right-footer {
+  display: flex;
+  flex-grow: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  padding: 14px 14px 0px 14px;
+  background-color: #ffffff;
+}

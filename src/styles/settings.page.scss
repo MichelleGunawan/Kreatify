@@ -1,0 +1,22 @@
+@import "./globals.css";
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  gap: 24px;
+  // @media (min-width: 768px) {
+  //   width: calc(
+  //     100vw - 220px
+  //   ); /* Calculate the width to occupy remaining space */
+  // }
+}
+
+.settings-page-buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 8px;
+}

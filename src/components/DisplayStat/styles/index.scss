@@ -1,0 +1,16 @@
+.display-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 10px;
+  background-color: rgba(var(--primary-color-rgb), 0.15);
+  border: 1px solid rgba(var(--primary-color-rgb), 0.3);
+  padding: 10px;
+  min-width: 100px;
+}
+
+.display-stat-header {
+  display: flex;
+  flex-direction: row;
+  color: black;
+}

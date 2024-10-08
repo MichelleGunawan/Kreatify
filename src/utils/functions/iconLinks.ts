@@ -1,0 +1,251 @@
+import { CLOUDINARY_URL } from "../constants";
+// TODO: add cloudinary url here
+export function getIconLink(icon: string) {
+  if (!icon) return "";
+  const iconLower = icon?.toLowerCase();
+  switch (iconLower) {
+    case "kreatifylogo":
+      return `${CLOUDINARY_URL}/v1720957514/kreatifylogo.svg`;
+    case "kreatifylogofull":
+      return `${CLOUDINARY_URL}/v1717127434/kreatify_logo_full.svg`;
+    case "kreatifylogofullblack":
+      return `${CLOUDINARY_URL}/v1724390819/kreatify_logo_full_black.svg`;
+    case "kreatifylogobackwards":
+      return `${CLOUDINARY_URL}/v1717127432/kreatify-logo-backwards.svg`;
+    case "facebook":
+      return `${CLOUDINARY_URL}/v1719386235/facebook.svg`;
+    case "instagram":
+      return `${CLOUDINARY_URL}/v1719386235/instagram.svg`;
+    case "tiktok":
+      return `${CLOUDINARY_URL}/v1720075413/tiktok.svg`;
+    case "youtube":
+      return `${CLOUDINARY_URL}/v1720257458/youtube.svg`;
+    case "snapchat":
+      return `${CLOUDINARY_URL}/v1720075470/snapchat.svg`;
+    case "twitch":
+      return `${CLOUDINARY_URL}/v1720075459/twitch.svg`;
+    case "linkedIn":
+      return `${CLOUDINARY_URL}/v1719386235/linkedin.svg`;
+    case "x":
+      return `${CLOUDINARY_URL}/v1720075429/x.svg`;
+    case "pinterest":
+      return `${CLOUDINARY_URL}/v1720257540/Pinterest_kzymzn.svg`;
+    case "google":
+      return `${CLOUDINARY_URL}/v1718143862/google.svg`;
+    case "email":
+      return `${CLOUDINARY_URL}/v1719386216/email.svg`;
+    case "phone":
+      return `${CLOUDINARY_URL}/v1719386235/phone.svg`;
+    case "whatsapp":
+      return `${CLOUDINARY_URL}/v1719386221/whatsapp.svg`;
+    case "website":
+      return `${CLOUDINARY_URL}/v1720215853/website.svg`;
+    case "location":
+      return `${CLOUDINARY_URL}/v1720215841/location.svg`;
+    case "file":
+      return `${CLOUDINARY_URL}/v1720225956/file.svg`;
+    case "attachment":
+      return `${CLOUDINARY_URL}/v1720597296/attachment.svg`;
+    case "edit":
+      return `${CLOUDINARY_URL}/v1720216682/edit.svg`;
+    case "search":
+      return `${CLOUDINARY_URL}/v1720216682/search.svg`;
+    case "info":
+      return `${CLOUDINARY_URL}/v1720256943/info.svg`;
+    case "add":
+      return `${CLOUDINARY_URL}/v1720031623/plus.svg`;
+    case "minus":
+      return `${CLOUDINARY_URL}/v1720444020/minus.svg`;
+    case "remove":
+      return `${CLOUDINARY_URL}/v1720257048/remove.svg`;
+    case "checkmark":
+      return `${CLOUDINARY_URL}/v1720263259/checkmark.svg`;
+    case "notification":
+      return `${CLOUDINARY_URL}/v1720257488/notifications.svg`;
+    case "addtalent":
+      return `${CLOUDINARY_URL}/v1720257479/add_talent.svg`;
+    case "addperson":
+      return `${CLOUDINARY_URL}/v1720927908/add-person.svg`;
+    case "addcampaign":
+      return `${CLOUDINARY_URL}/v1720927905/add-campaign.svg`;
+    case "rejectcampaign":
+      return `${CLOUDINARY_URL}/v1726999616/reject_campaign.svg`;
+    case "acceptcampaign":
+      return `${CLOUDINARY_URL}/v1726999616/accept_campaign.svg`;
+    case "pendingcampaigns":
+      return `${CLOUDINARY_URL}/v1719124899/pending_campaigns.svg`;
+    case "ongoingcampaigns":
+      return `${CLOUDINARY_URL}/v1719124831/ongoing_campaigns.svg`;
+    case "urgentcampaigns":
+      return `${CLOUDINARY_URL}/v1719124894/urgent_campaigns.svg`;
+    case "next":
+      return `${CLOUDINARY_URL}/v1717135633/next.svg`;
+    case "prev":
+      return `${CLOUDINARY_URL}/v1717135578/previous.svg`;
+    case "down":
+      return `${CLOUDINARY_URL}/v1718499332/down.svg`;
+    case "up":
+      return `${CLOUDINARY_URL}/v1719103902/upload.svg`;
+    case "upload":
+      return `${CLOUDINARY_URL}/v1719103902/upload.svg`;
+    case "filter":
+      return `${CLOUDINARY_URL}/v1720028533/filter.svg`;
+    case "calendar":
+      return `${CLOUDINARY_URL}/v1720257498/calendar.svg`;
+    case "person":
+      return `${CLOUDINARY_URL}/v1717810158/person.svg`;
+    case "profile":
+      return `${CLOUDINARY_URL}/v1717127071/profile.svg`;
+    case "creators":
+      return `${CLOUDINARY_URL}/v1727136426/creators.svg`;
+    case "managers":
+      return `${CLOUDINARY_URL}/v1717127148/managers.svg`;
+    case "home":
+      return `${CLOUDINARY_URL}/v1717126942/home.svg`;
+    case "campaign":
+      return `${CLOUDINARY_URL}/v1720028471/campaign.svg`;
+    case "chat":
+      return `${CLOUDINARY_URL}/v1717127131/chat.svg`;
+    case "agency":
+      return `${CLOUDINARY_URL}/v1717127101/agency.svg`;
+    case "team":
+      return `${CLOUDINARY_URL}/v1717127153/team.svg`;
+    case "coin":
+      return `${CLOUDINARY_URL}/v1717184767/coin.svg`;
+    case "wallet":
+      return `${CLOUDINARY_URL}/v1717184766/wallet.svg`;
+    case "person":
+      return `${CLOUDINARY_URL}/v1717810158/person.svg`;
+    case "settings":
+      return `${CLOUDINARY_URL}/v1720257776/settings.svg`;
+    case "profile":
+      return `${CLOUDINARY_URL}/v1717127071/profile.svg`;
+    case "submitsuccess":
+      return `${CLOUDINARY_URL}/v1720738867/submit-success.svg`;
+    case "dot":
+      return `${CLOUDINARY_URL}/v1720770050/dot_tiny.svg`;
+    case "trash":
+      return `${CLOUDINARY_URL}/v1720784834/trash.svg`;
+    case "save":
+      return `${CLOUDINARY_URL}/v1720784838/save.svg`;
+    case "link":
+      return `${CLOUDINARY_URL}/v1720784857/link.svg`;
+    case "menu":
+      return `${CLOUDINARY_URL}/v1720257516/menu.svg`;
+    case "graph":
+      return `${CLOUDINARY_URL}/v1721792623/graph.svg`;
+    case "sort":
+      return `${CLOUDINARY_URL}/v1721792397/sort.svg`;
+    case "pitchlist":
+      return `${CLOUDINARY_URL}/v1728096209/pitchlist_icon.svg`;
+    case "addpitchlist":
+      return `${CLOUDINARY_URL}/v1728096209/add_pitchlist.svg`;
+    case "share":
+      return `${CLOUDINARY_URL}/v1721814645/share.svg`;
+    case "download":
+      return `${CLOUDINARY_URL}/v1721814664/download.svg`;
+    case "visible":
+      return `${CLOUDINARY_URL}/v1722336917/visible.svg`;
+    case "hidden":
+      return `${CLOUDINARY_URL}/v1722336922/invisible.svg`;
+    case "copy":
+      return `${CLOUDINARY_URL}/v1722985805/copy.svg`;
+    case "text":
+      return `${CLOUDINARY_URL}/v1727957287/text_file.svg`;
+    case "star":
+      return `${CLOUDINARY_URL}/v1722985801/star.svg`;
+    case "starfilled":
+      return `${CLOUDINARY_URL}/v1722985799/star_filled.svg`;
+    case "contacts":
+      return `${CLOUDINARY_URL}/v1723635777/contacts.svg`;
+    case "mediakit":
+      return `${CLOUDINARY_URL}/v1725567475/mediakit.svg`;
+    case "quotes":
+      return `${CLOUDINARY_URL}/v1727000112/quotes.svg`;
+    default:
+      return "/";
+  }
+}
+
+export function getCampaignIconLink(category: string) {
+  const iconLower = category.toLowerCase();
+  switch (iconLower) {
+    case "fashion":
+      return `${CLOUDINARY_URL}/v1720789652/fashion-icon.svg`;
+    case "beauty":
+      return `${CLOUDINARY_URL}/v1720789652/beauty.svg`;
+    case "skincare":
+      return `${CLOUDINARY_URL}/v1720789652/skincare.svg`;
+    case "health":
+      return `${CLOUDINARY_URL}/v1720789652/health.svg`;
+    case "tech":
+      return `${CLOUDINARY_URL}/v1720789651/tech-icon.svg`;
+    case "finance":
+      return `${CLOUDINARY_URL}/v1720789650/finance.svg`;
+    case "fitness":
+      return `${CLOUDINARY_URL}/v1720789651/fitness.svg`;
+    case "hair":
+      return `${CLOUDINARY_URL}/v1720789650/hair.svg`;
+    case "jewelery":
+      return `${CLOUDINARY_URL}/v1720789650/jewelery.svg`;
+    case "home":
+      return `${CLOUDINARY_URL}/v1720789650/home-icon.svg`;
+    case "movie":
+      return `${CLOUDINARY_URL}/v1720789650/movie.svg`;
+    case "shopping":
+      return `${CLOUDINARY_URL}/v1720789649/shopping.svg`;
+    case "pets":
+      return `${CLOUDINARY_URL}/v1720789648/pets.svg`;
+    case "travel":
+      return `${CLOUDINARY_URL}/v1720789648/travel.svg`;
+    case "cleaning":
+      return `${CLOUDINARY_URL}/v1720789648/cleaning.svg`;
+    case "education":
+      return `${CLOUDINARY_URL}/v1720789648/education.svg`;
+    case "baby":
+      return `${CLOUDINARY_URL}/v1720789648/baby.svg`;
+    case "food":
+      return `${CLOUDINARY_URL}/v1725566362/burger.svg`;
+    case "beverage":
+      return `${CLOUDINARY_URL}/v1725568075/bottle.svg`;
+    case "cooking":
+      return `${CLOUDINARY_URL}/v1725567086/restaurant.svg`;
+    case "alcohol":
+      return `${CLOUDINARY_URL}/v1725567187/alcohol.svg`;
+    case "coffee":
+      return `${CLOUDINARY_URL}/v1725568074/coffee.svg`;
+    case "sports":
+      return `${CLOUDINARY_URL}/v1725567111/sports.svg`;
+    case "kitchen":
+      return `${CLOUDINARY_URL}/v1725567786/fridge.svg`;
+    case "vegan & vegetarian":
+      return `${CLOUDINARY_URL}/v1725568073/vegan.svg`;
+    case "men's fashion":
+      return `${CLOUDINARY_URL}/v1725568072/mens.svg`;
+    case "gaming":
+      return `${CLOUDINARY_URL}/v1725568659/gaming.svg`;
+    case "entertainment":
+      return `${CLOUDINARY_URL}/v1725568663/entertainment.svg`;
+    default:
+      return "/";
+  }
+}
+
+export const getNotificationIconLink = (category: string) => {
+  switch (category.toLowerCase()) {
+    case "pendingcampaign":
+      return `${CLOUDINARY_URL}/v1720927905/add-campaign.svg`;
+    case "rejectcampaign":
+      return `${CLOUDINARY_URL}/v1726999616/reject_campaign.svg`;
+    case "acceptcampaign":
+      return `${CLOUDINARY_URL}/v1726999616/accept_campaign.svg`;
+    case "milestoneupdate":
+      return `${CLOUDINARY_URL}/v1727033871/milestone_note.svg`;
+    case "milestonesubmission":
+      return `${CLOUDINARY_URL}/v1720263259/checkmark.svg`;
+    case "milestonedue":
+      return `${CLOUDINARY_URL}/v1726999977/due_24hr.svg`;
+    default:
+      return `${CLOUDINARY_URL}/v1720957514/kreatifylogo.svg`;
+  }
+};

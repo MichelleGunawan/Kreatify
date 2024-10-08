@@ -1,0 +1,52 @@
+@import "../../../styles/globals.css";
+
+.todo-card {
+  z-index: 2;
+  overflow-x: hidden;
+  height: 528px;
+
+  display: flex;
+  padding: 24px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 5px 10px 50px 0px rgba(73, 98, 216, 0.12);
+}
+
+.todo-card-header-container {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-card-header {
+  color: #292929;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  overflow: hidden;
+
+  padding-bottom: 0.5rem;
+}
+
+.todo-card-items-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  gap: 20px;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.todo-card-items-container::-webkit-scrollbar {
+  display: none; /* WebKit-based browsers */
+}

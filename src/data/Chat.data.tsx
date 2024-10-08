@@ -1,0 +1,72 @@
+export const chatsData = [
+  {
+    id: 1,
+    chatName: "Jane Doe",
+    users: [{ id: 1, name: "user1", profilePic: "https://picsum.photos/200" }],
+    lastMessage: "hi",
+    lastMessageDate: "10:00",
+    type: "user",
+  },
+  {
+    id: 2,
+    chatName: "Michelle x Nike",
+    users: [
+      { id: 1, name: "user1", profilePic: "https://picsum.photos/200" },
+      { id: 2, name: "user2", profilePic: "https://picsum.photos/200" },
+    ],
+    lastMessage: "hi",
+    lastMessageDate: "11:00",
+    type: "campaign",
+    category: "fashion",
+  },
+  {
+    id: 3,
+    chatName: "Jane Doe, John Doe, Jack Doe",
+    users: [{ id: 1, name: "user1", profilePic: "https://picsum.photos/200" }],
+    lastMessage: "hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiooooooooooooooooo",
+    lastMessageDate: "12:00",
+    type: "user",
+  },
+];
+export const chatData = {
+  id: 1,
+  chatName: "Jane Doe",
+  users: [{ id: 1, name: "user1", profilePic: "https://picsum.photos/200" }],
+  lastMessage: "hi",
+  lastMessageDate: "10:00",
+  type: "user",
+  messages: [
+    {
+      id: 1,
+      senderId: 1,
+      senderName: "user1",
+      senderProfilePic: "https://picsum.photos/200",
+      message: "Hello",
+      dateSent: "Jan 0, 0000",
+    },
+    {
+      id: 2,
+      senderId: 2,
+      senderName: "user2",
+      senderProfilePic: "https://picsum.photos/200",
+      message: "Hi",
+      dateSent: "Jan 0, 0000",
+    },
+    {
+      id: 3,
+      senderId: 1,
+      senderName: "user1",
+      senderProfilePic: "https://picsum.photos/200",
+      message: "How are you?",
+      dateSent: "Jan 0, 0000",
+    },
+    {
+      id: 4,
+      senderId: 2,
+      senderName: "user2",
+      senderProfilePic: "https://picsum.photos/200",
+      message: "I am fine",
+      dateSent: "Jan 0, 0000",
+    },
+  ],
+};

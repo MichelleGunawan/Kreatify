@@ -1,0 +1,76 @@
+.chat {
+  width: 100%;
+  max-width: 100%;
+  min-height: 68px;
+  height: 68px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  gap: 8px;
+  overflow: hidden;
+
+  border-bottom: solid 1px #ededed;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.chat-preview-image {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.chat-preview-info {
+  max-width: calc(100% - 50px);
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.chat-preview-header {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  overflow: hidden;
+}
+
+.chat-preview-name {
+  width: calc(100% - 50px);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black;
+}
+
+.chat-preview-last-message-date {
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #737373;
+}
+.chat-preview-last-message {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #555;
+}

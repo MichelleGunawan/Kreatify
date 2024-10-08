@@ -1,0 +1,26 @@
+@import "./breakpoints.scss";
+.table-container {
+  width: calc(100% - 30px);
+  margin-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  @media (max-width: $medium-screen) {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+.table-container-col-scroll {
+  width: calc(100% - 30px);
+  margin-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+}

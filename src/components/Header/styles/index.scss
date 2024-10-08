@@ -1,0 +1,17 @@
+@import "@/styles/_breakpoints.scss";
+.header-page-name {
+  color: #292929;
+  display: block;
+  @media (max-width: $medium-screen) {
+    display: none;
+  }
+}
+
+.header-drawer-icon-container {
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: $medium-screen) {
+    display: block;
+  }
+}

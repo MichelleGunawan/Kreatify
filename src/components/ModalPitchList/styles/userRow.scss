@@ -1,0 +1,67 @@
+.user-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+  padding: 20px 10px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #c3c3c3;
+  }
+}
+.user-row-ex-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.user-row-user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+}
+.user-row-pills-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+.user-row-user-info-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-row-usertype {
+  color: var(--grey-color-400);
+}
+
+.user-row-body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-row-pills {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}

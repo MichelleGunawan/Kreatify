@@ -1,0 +1,146 @@
+@import "./breakpoints.scss";
+
+.table-card {
+  max-width: 100%;
+  max-height: 875px;
+
+  display: flex;
+  padding: 24px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 5px 10px 50px 0px rgba(73, 98, 216, 0.12);
+
+  overflow-x: hidden;
+
+  @media (max-width: $medium-screen) {
+    max-height: none;
+  }
+}
+
+.table-header-container-row {
+  width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 4px;
+
+  @media (max-width: $medium-screen) {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.table-header-container-col {
+  width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 8px;
+
+  .table-header-left {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .table-header-right {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.table-header-left {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  @media (max-width: $medium-screen) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.table-header-right {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+
+  @media (max-width: $medium-screen) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.table-footer {
+  width: 100%;
+  padding: 0px 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.table-pagination-container {
+  width: 100%;
+  padding: 0px 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  @media (max-width: $medium-screen) {
+    display: none;
+  }
+}
+
+.table-load-button-container {
+  width: 100%;
+  padding: 0px 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  display: none;
+  @media (max-width: $medium-screen) {
+    display: block;
+  }
+}
+
+.table-filters-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.table-filters {
+  width: 100%;
+  max-width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}

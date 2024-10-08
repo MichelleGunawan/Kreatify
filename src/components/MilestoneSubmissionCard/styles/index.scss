@@ -1,0 +1,74 @@
+@import "@/styles/_breakpoints.scss";
+.milestone-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+
+  border-radius: 10px;
+  border: 1px solid var(--font-item-bg-hover-secondary-bg, #ededed);
+  background: #fff;
+
+  @media (max-width: $small-screen) {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+}
+
+.milestone-title {
+  @media (max-width: $small-screen) {
+    order: 0;
+  }
+}
+
+.milestone-file {
+  width: 180px;
+  justify-self: center;
+  @media (max-width: $small-screen) {
+    order: 3;
+    width: 200%;
+    justify-self: flex-start;
+  }
+}
+.milestone-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+
+  @media (max-width: $medium-screen) {
+    order: 2;
+  }
+}
+
+.pill {
+  padding: 4px 8px;
+  border-radius: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto; /* Ensure auto width */
+  white-space: nowrap; /* Prevent text from wrapping */
+
+  @media (max-width: $medium-screen) {
+    order: 2;
+  }
+}
+
+.milestone-file-pending {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #a4a4a4;
+  color: #a4a4a4;
+}

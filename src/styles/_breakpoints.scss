@@ -1,0 +1,11 @@
+// _breakpoints.scss
+$sidebar-width: 220px;
+
+$small-screen: 640px;
+$medium-screen: 768px;
+$large-screen: 1280px;
+$extra-large-screen: 1536px;
+
+$medium-page: 768px - $sidebar-width;
+$large-page: 1280px - $sidebar-width;
+$extra-large-page: 1536px - $sidebar-width;

@@ -1,0 +1,63 @@
+@import "@/styles/_breakpoints.scss";
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  border-width: 1px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  gap: 4px;
+  overflow: hidden;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.button-with-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  border-width: 1px;
+  background-color: transparent;
+  transition: "background-color 0.3s ease";
+  gap: 4px;
+  overflow: hidden;
+
+  @media (max-width: $medium-screen) {
+    max-width: 40px;
+  }
+}
+
+.button-with-icon:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.button-icon {
+}
+
+.button-label {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+.button-with-icon-label {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  @media (max-width: $medium-screen) {
+    display: none;
+  }
+}

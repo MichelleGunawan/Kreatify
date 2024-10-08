@@ -1,0 +1,78 @@
+@import "@/styles/_breakpoints.scss";
+
+.agency-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.agency-info-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.agency-info-name {
+  display: block;
+  color: black;
+  white-space: nowrap;
+}
+
+.agency-info-top-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.agency-info-header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.agency-info-header {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.agency-info-location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  color: #737373;
+}
+
+.agency-info-button-container {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.agency-info-stats-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.agency-info-bio {
+  color: black;
+  white-space: pre-wrap;
+}

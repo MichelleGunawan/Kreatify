@@ -1,0 +1,38 @@
+@import "@/styles/_breakpoints.scss";
+
+.info-card-info-container {
+  width: 100%;
+  display: grid;
+  gap: 30px;
+  overflow: hidden;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: $medium-screen) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.info-card-text {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgb(255, 255, 255, 0.75);
+
+  // Remove the right border on the 4th item for larger screens
+  &:nth-child(4n) {
+    border-right: none;
+  }
+
+  @media (max-width: $medium-screen) {
+    border-right: none;
+    border-bottom: 1px solid #d5d5d5;
+  }
+}
+
+.info-card-value {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0px;
+}

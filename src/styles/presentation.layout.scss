@@ -1,0 +1,24 @@
+@import "@/styles/_breakpoints.scss";
+
+.presentation-screen-view {
+  background-color: var(--background-color);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.presentation-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 100%;
+  padding: 60px;
+  overflow: visible;
+}

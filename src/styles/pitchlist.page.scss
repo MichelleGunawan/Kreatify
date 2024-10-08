@@ -1,0 +1,39 @@
+@import "@/styles/_breakpoints.scss";
+.pitchlist-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+}
+.pitchlist-users {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  @media (min-width: $small-screen) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (min-width: ($medium-screen+260px)) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  // @media (min-width: $extra-large-screen) {
+  //   grid-template-columns: repeat(4, minmax(0, 1fr));
+  // }
+}
+
+.pitchlist-description {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  white-space: pre-wrap;
+  color: black;
+  max-height: 92px;
+  overflow-y: auto;
+}

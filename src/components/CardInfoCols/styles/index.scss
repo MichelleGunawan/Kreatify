@@ -1,0 +1,32 @@
+@import "@/styles/_breakpoints.scss";
+
+.display-cols-info-container {
+  width: 100%;
+  display: grid;
+  gap: 30px;
+  overflow: hidden;
+
+  @media (max-width: $medium-screen) {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+.display-cols-text {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgb(255, 255, 255, 0.75);
+
+  @media (max-width: $medium-screen) {
+    border-right: none !important;
+    border-bottom: 1px solid #d5d5d5;
+  }
+}
+
+.display-cols-value {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0px;
+}

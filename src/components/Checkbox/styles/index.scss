@@ -1,0 +1,22 @@
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+input[type="checkbox"] {
+  border-radius: 5px;
+  border: 1px solid var(--Font-Border-Dividers, #c3c3c3);
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  transform: background-color 0.2s ease-in-out;
+}
+input[type="checkbox"]:checked {
+  border-color: var(--primary-color, #775fff);
+  background-color: var(--primary-color, #775fff);
+}

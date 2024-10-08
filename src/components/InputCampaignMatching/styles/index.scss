@@ -1,0 +1,33 @@
+.input-payments {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-question-container {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid var(--Font-Border-Dividers, #c3c3c3);
+}
+.input-question-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-question-close-button {
+  cursor: pointer;
+  color: #838383;
+  font-size: 20px;
+}

@@ -1,0 +1,33 @@
+.modal-filter-campaigns-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.modal-filter-campaigns-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+
+  &.two-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.modal-filter-campaigns-checkbox-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+
+  &.two-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
